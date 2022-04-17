@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 import './About.scss'
+import { images } from '../../constants'
 
 const About = () => {
 
@@ -20,7 +21,7 @@ const About = () => {
     return (
         <>
             <h2 className="head-text header-text">
-                Building <span>Efficient & Qualitative </span>product means <span>Good Business</span>
+                Building <span>Efficient & Qualitative </span>products means <span>Good Business</span>
             </h2>
 
             <motion.div
@@ -56,6 +57,21 @@ const About = () => {
                         </motion.div>
                     ))
                 }
+            </motion.div>
+
+            <motion.div
+                whileInView={{ opacity: [0, 1] }}
+                transition={{ duration: 0.5, type: 'tween', stiffness: 50 }}
+                className="app__profiles-postman-wrap"
+            >
+                <a href="https://api.badgr.io/public/assertions/euaP5P3-Q0qT6s50trr2UA?identity__email=miamitsahoo%40gmail.com" target="_blank" rel="noopener noreferrer">
+                    <div>
+                        <img src={images.postmanstudentexpert} alt="" />
+                    </div>
+                    <h4>
+                        Postman Student Expert
+                    </h4>
+                </a>
             </motion.div>
         </>
     )
