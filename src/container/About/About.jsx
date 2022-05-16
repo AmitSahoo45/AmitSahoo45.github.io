@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
-import './About.scss'
 import { images } from '../../constants'
+import Resume from '../../assets/files/Resume-Amit-Kumar-Sahoo.pdf'
+import './About.scss'
 
 const About = () => {
 
@@ -73,6 +74,19 @@ const About = () => {
                     </h4>
                 </a>
             </motion.div>
+
+            <button
+                className='app__profiles-btn-download-resume'
+            >
+                <a
+                    href={Resume}
+                    download='AmitKumarSahooResume.pdf'
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Download Resume
+                </a>
+            </button>
         </>
     )
 }

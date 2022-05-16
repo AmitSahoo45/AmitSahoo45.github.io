@@ -78,3 +78,31 @@
         }
     }
 }
+
+.app__profiles-btn-download-resume {
+    padding: 1rem;
+    margin-top: 1rem;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: all 0.25s ease-out;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+
+    &:hover {
+        background: var(--deepBlue);
+    }
+
+    a {
+        color: var(--white);
+        text-decoration: none;
+        font-family: var(--Poppins);
+    }
+}
