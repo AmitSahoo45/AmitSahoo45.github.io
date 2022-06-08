@@ -48,14 +48,14 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="Email" />
-          <a href="mailto:miamitsahoo@email.com" className='p-text'>
+          <a href="mailto:miamitsahoo@email.com" className='p-text-black'>
             Email Me
           </a>
         </div>
 
         <div className="app__footer-card">
           <img src={images.mobile} alt="Email" />
-          <a href="tel: +91 9000213148" className='p-text'>
+          <a href="tel: +91 9000213148" className='p-text-black'>
             Call Me
           </a>
         </div>
@@ -70,16 +70,16 @@ const Footer = () => {
         </h4>
         <ul className='app__flex'>
           <li><a href="https://mobile.twitter.com/DepressedCoder" target="_blank" rel="noopener">
-            <BsTwitter />
+            <BsTwitter className='app__primarybg' />
           </a></li>
           <li><a href="https://github.com/AmitSahoo45/" target="_blank" rel="noopener">
-            <BsGithub />
+            <BsGithub className='app__primarybg' />
           </a></li>
           <li><a href="https://www.instagram.com/amit_aksabar_sahoo/" target="_blank" rel="noopener">
-            <BsInstagram />
+            <BsInstagram className='app__primarybg' />
           </a></li>
           <li><a href="https://www.linkedin.com/in/amit-kumar-sahoo-web/" target="_blank" rel="noopener">
-            <BsLinkedin />
+            <BsLinkedin className='app__primarybg' />
           </a></li>
         </ul>
       </div>
@@ -96,7 +96,7 @@ const Footer = () => {
 
           <div>
             <textarea
-              className="p-text"
+              className="p-text-black"
               placeholder="Your Message"
               value={message}
               name="message"

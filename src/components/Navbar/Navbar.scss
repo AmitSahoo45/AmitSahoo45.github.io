@@ -4,10 +4,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    // background: #ffffff15;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: fixed;
     z-index: 2;
 }
@@ -25,7 +24,7 @@
 .app__navbar-links {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     list-style: none;
 
@@ -47,7 +46,7 @@
         }
 
         a {
-            color: var(--gray);
+            color: var(--white);
             text-decoration: none;
             flex-direction: column;
             text-transform: uppercase;

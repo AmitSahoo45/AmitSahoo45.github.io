@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import { urlFor, client } from '../../client'
 import { images } from '../../constants'
-import Resume from '../../assets/files/Resume-Amit-Kumar-Sahoo.pdf'
 import './About.scss'
 
 const About = () => {
@@ -48,7 +47,7 @@ const About = () => {
                             </h2>
 
                             <p
-                                className="p-text"
+                                className="p-text-black"
                                 style={{
                                     marginTop: 10
                                 }}
@@ -75,7 +74,7 @@ const About = () => {
                 </a>
             </motion.div>
 
-            <button
+            {/* <button
                 className='app__profiles-btn-download-resume'
             >
                 <a
@@ -86,7 +85,7 @@ const About = () => {
                 >
                     Download Resume
                 </a>
-            </button>
+            </button> */}
         </>
     )
 }
@@ -96,3 +95,4 @@ export default AppWrap(
     'about',
     'app__whitebg'
 )
+

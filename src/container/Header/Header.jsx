@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect';
 import { AppWrap } from '../../wrapper'
 import { images } from '../../constants'
 import './Header.scss'
@@ -24,17 +25,24 @@ const Header = () => {
                 className="app__header-info"
             >
                 <div className="app__header-badge">
-                    <div className="badge-cmp app__flex">
-                        <span>🙏</span>
-                        <div style={{ marginLeft: 20 }}>
-                            <p className="p-text">Namaste, I am</p>
-                            <h1 className="head-text">Amit</h1>
-                        </div>
+                    <div className="app__header-self_intro">
+                        <p className='p-text'>Namaste, I am</p>
+                        <h1>Amit Sahoo</h1>
                     </div>
-
-                    <div className="tag-cmp app__flex">
-                        <p className="p-text">Full Stack Web Developer</p>
-                        <p className="p-text">Competetitive Programmer</p>
+                    <div className="app__header-self-descrip">
+                        <span className="p-text">
+                            I am a
+                            <h4>
+                                <Typewriter
+                                    options={{
+                                        strings: ['Full Stack Developer', 'Competetive Programmer','UI/UX Designer'],
+                                        autoStart: true,
+                                        loop: true,
+                                        delay: 100,
+                                    }}
+                                />
+                            </h4>
+                        </span>
                     </div>
                 </div>
             </motion.div>
@@ -44,7 +52,7 @@ const Header = () => {
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className="app__header-img"
             >
-                <img src={images.profile} alt="profile_bg" />
+                <img src={images.profile} alt="profile_bg" className='floating_box' />
                 <motion.img
                     whileInView={{ scale: [0, 1] }}
                     transition={{ duration: 1, ease: 'easeInOut' }}
@@ -59,7 +67,7 @@ const Header = () => {
                 whileInView={scaleVariants.whileInView}
                 className="app__header-circles"
             >
-                {[images.javascript, images.sass, images.cpp].map((circle, index) => (
+                {[images.javascript, images.node, images.cpp].map((circle, index) => (
                     <div className="circle-cmp app__flex" key={`circle-${index}`}>
                         <img src={circle} alt="Skills" />
                     </div>

@@ -96,7 +96,7 @@ const Work = () => {
                                 <h4 className="bold-text">
                                     {work.title}
                                 </h4>
-                                <p className="p-text"
+                                <p className="p-text-black"
                                     style={{ marginTop: 10 }}
                                 >
                                     {work.description}
