@@ -27,7 +27,7 @@ const Header = () => {
                 <div className="app__header-badge">
                     <div className="app__header-self_intro">
                         <p className='p-text'>Namaste, I am</p>
-                        <h1>Amit Sahoo</h1>
+                        <h1>Amit Kumar Sahoo</h1>
                     </div>
                     <div className="app__header-self-descrip">
                         <span className="p-text">
@@ -35,7 +35,7 @@ const Header = () => {
                             <h4>
                                 <Typewriter
                                     options={{
-                                        strings: ['Full Stack Developer', 'Competetive Programmer','UI/UX Designer'],
+                                        strings: ['Software Developer','UI/UX Designer'],
                                         autoStart: true,
                                         loop: true,
                                         delay: 100,
@@ -67,7 +67,7 @@ const Header = () => {
                 whileInView={scaleVariants.whileInView}
                 className="app__header-circles"
             >
-                {[images.javascript, images.node, images.cpp].map((circle, index) => (
+                {[images.typescript, images.dotnet, images.java].map((circle, index) => (
                     <div className="circle-cmp app__flex" key={`circle-${index}`}>
                         <img src={circle} alt="Skills" />
                     </div>

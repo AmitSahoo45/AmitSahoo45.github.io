@@ -6,7 +6,6 @@ import { images } from '../../constants'
 import './About.scss'
 
 const About = () => {
-
     const [abouts, setAbouts] = useState([]);
 
     useEffect(() => {
@@ -31,8 +30,7 @@ const About = () => {
                     abouts.map((about, index) => (
                         <motion.div
                             whileInView={{ opacity: [0, 1] }}
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ duration: 0.5, type: 'spring', stiffness: 100 }}
+                            transition={{ duration: 0.6, type: 'spring', stiffness: 100 }}
                             className='app__profile-item'
                             key={about.title + index}
                         >

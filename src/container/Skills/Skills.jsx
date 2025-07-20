@@ -81,7 +81,7 @@ const Skills = () => {
                                                 key={work.name}
                                             >
                                                 <h4 className="bold-text">{work.name}</h4>
-                                                <p className="p-text">Time Period - {work.timePeriod}</p>
+                                                <p className="p-text">{work.timePeriod}</p>
                                                 <p className="p-text">{work.company}</p>
                                             </motion.div>
                                             <ReactTooltip
